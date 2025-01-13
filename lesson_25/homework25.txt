@@ -1,0 +1,63 @@
+Написати 25 XPath та 25 CSS локаторів для сайту https://qauto2.forstudy.space/
+Використовувати функцію text(), пошук за атрибутом @, та складні локатори (більш ніж з одним елементом)
+Дані для входу на сайт -
+login - guest
+pass - welcome2qauto
+Для доступу через селеніум можна використати наступну конструкцію - driver.get("<https://UserName:Password@qauto2.forstudy.space>;");
+Сдавати у формі файлу з локаторами у гіті
+
+
+# XPath Locators
+1. //button[text()='Sign up']
+2. //button[text()='Sign In']
+3. //a[text()='Guest log in']
+4. //a[text()='Home']
+5. //button[text()='About']
+6. //button[text()='Contacts']
+7. //div[@class='header_logo']
+8. //button[@class='btn header-link -active']
+9. //header[@class='bg-basic-dark']
+10. //section[@class='section hero']
+11. //div[@class='hero-video']
+12. //iframe[@src='https://www.youtube.com/embed/znjCfIOU_w8?showinfo=0&controls=0']
+13. //div[@class='container']
+14. //button[@class='btn btn-outline-white header_signin']
+15. //div[@class='d-flex justify-content-between align-items-center']
+16. //router-outlet[@_ngcontent-pxs-c61]
+17. //div[@class='row']
+18. //div[@class='col-12 col-lg-4']
+19. //div[@class='col-12 col-lg-8']
+20. //div[@class='header_inner']//a[@class='header_logo']
+21. //div[@class='container']//button[text()='About']
+22. //div[@class='hero-video']//iframe[@width='640']
+23. //header[@class='bg-basic-dark']//button[text()='Sign In']
+24. //section[@class='section hero']//div[@class='container']//div[@class='row']
+25. //div[@class='col-12 col-lg-8']//iframe[@src='https://www.youtube.com/embed/znjCfIOU_w8?showinfo=0&controls=0']
+
+
+# CSS Locators
+26. h3.about-block_title
+27. button:contains("Add an expense")
+28. .about-block_descr
+29. .about-picture_img
+30. p.about-block_descr.lead
+31. .about-block h2
+32. .about-block_title.h2
+33. #contactsSection
+34. #contactsSection .row .col a
+35. a[href*="facebook"]
+36. a[href*="t.me"]
+37. a[href*="youtube"]
+38. a[href*="instagram"]
+39. a[href*="linkedin"]
+40. h3:contains("Fuel expenses")
+41. div[class*='about-block']:nth-child(2) > p.lead
+42. #contactsSection div[class^="container"] > div[class*="row"] > div:first-child
+43. div#contactsSection > div.container > div[class*="row"] > div:nth-of-type(2) > a.footer-link
+44. footer .footer_item-right
+45. p.about-block_descr
+46. .about-block a
+47. h3 + p
+48. .lead
+49. img[src*="info2.jpg"]
+50. .about-block_picture
